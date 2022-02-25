@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Italic.ttf");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBoldItalic.ttf");
+  font-style: italic;
+  font-weight: 600;
+}
+#header {
+  padding: 36px 0;
+  position: sticky !important;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.navigation-item {
+  margin-right: 70px;
+}
+
+.phone {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+  margin-right: 10px;
+}

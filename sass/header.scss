@@ -1,0 +1,38 @@
+@import "variables";
+@import "fonts";
+
+#header {
+  padding: 36px 0;
+  position: sticky!important;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.navigation-item {
+  margin-right: 70px;
+}
+
+.phone {
+  font-weight: 600;
+  font-size: $sm;
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+  margin-right: 10px;
+}
+

@@ -1,0 +1,36 @@
+.contacts-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.contact-card {
+  background-color: #6016C4;
+  border-radius: 50%;
+  width: 155px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+}
+.contact-card img {
+  opacity: 0.9;
+}
+.contact-card .contacts-card__content {
+  margin-left: 25px;
+  font-size: 18px;
+}
+.contact-card .contacts-card__content h4 {
+  margin-bottom: 10px;
+}
+.contact-card .person__telegram-wrapper {
+  margin-top: 40px;
+}
+
+.person__telegram {
+  display: inline-block;
+  transition: 0.2s all ease;
+  border-bottom: 1px solid white;
+}
+.person__telegram:hover {
+  border-bottom: 1px solid #6016C4;
+}

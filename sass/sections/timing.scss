@@ -1,0 +1,57 @@
+@import "../variables";
+
+#timing {
+  background-color: $lightBlue;
+  padding: 120px 0 530px;
+}
+
+.timing__title {
+  justify-content: space-between;
+
+  p {
+    max-width: 812px;
+  }
+}
+
+.timing__content-list {
+
+}
+
+.timing-item, .timing__splitter {
+  display: grid;
+  grid-template-columns: 290px 416px 520px;
+  align-items: center;
+}
+
+.timing-item {
+  height: 90px;
+  border-bottom: 1px solid $text-color;
+}
+
+.timing__splitter {
+  padding-top: 50px;
+  color: rgba(96, 22, 196, 0.5);
+}
+
+.event__time {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.event__speaker {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.event__name {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.event__theme {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+}

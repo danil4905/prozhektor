@@ -1,0 +1,36 @@
+@import "../variables";
+
+.contacts-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.contact-card {
+  background-color: $text-color;
+  border-radius: 50%;
+  width: 155px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  img {
+    opacity: 0.9;
+  }
+  .contacts-card__content {
+    margin-left: 25px;
+    font-size: 18px;
+    h4 {
+      margin-bottom: 10px;
+    }
+  }
+  .person__telegram-wrapper {
+    margin-top: 40px;
+  }
+}
+.person__telegram {
+  display: inline-block;
+  transition: 0.2s all ease;
+  border-bottom: 1px solid white;
+  &:hover {
+    border-bottom: 1px solid $text-color;
+  }
+}

@@ -1,0 +1,30 @@
+#no_water {
+  min-height: 686px;
+}
+
+.no_water-wrapper {
+  position: relative;
+}
+.no_water-wrapper h1 {
+  font-weight: 600;
+  font-size: 68px;
+  line-height: 150%;
+  min-width: 844px;
+  position: absolute;
+  z-index: 10;
+  top: 200px;
+  left: calc(50% - 644px);
+}
+
+.no_water-img {
+  position: relative;
+  float: right;
+  background-color: #F3F0F8;
+  width: 1015px;
+  height: 546px;
+}
+.no_water-img::before {
+  position: absolute;
+  content: url("../img/head.png");
+  bottom: -5px;
+}

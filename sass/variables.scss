@@ -1,0 +1,26 @@
+$text-color: #6016C4;
+$yellow: #FFFF00;
+$lightBlue: #F3F0F8;
+$btnText: #4B0D9E;
+
+
+// FONTS SIZE
+
+$sm: 18px;
+$md: 24px;
+$title:45px;
+$extraBig: 68ox;
+
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+

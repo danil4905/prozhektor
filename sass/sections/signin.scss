@@ -1,0 +1,126 @@
+@import "../variables";
+
+#signin {
+  min-height: 680px;
+  margin-top: -25%;
+}
+
+.signin-container {
+  background-color: #6016C4;
+  height: 680px;
+  position: relative;
+
+  &::before {
+    content: url("../img/backside.png");
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    opacity: 0.7;
+  }
+}
+
+.signin__content {
+  width: 50%;
+  float: right;
+  padding: 95px 120px 95px 0;
+
+  h2 {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 150%;
+    color: white;
+  }
+}
+
+.main-form {
+  @include flex-column;
+  align-items: flex-start;
+
+  .input-default {
+    background-color: #6016C4;
+    font-size: 18px;
+    line-height: 180%;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    width: 416px;
+
+    &::placeholder {
+      color: #FFFFFF;
+      opacity: 0.5;
+    }
+  }
+
+  .checkbox-label {
+    color: white;
+    margin: 55px 0;
+
+    .policy-access {
+      color: $yellow;
+      text-decoration: underline;
+    }
+  }
+
+}
+
+.custom-checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox > span {
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox > span::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #FFFF00;
+  margin-right: 0.5em;
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox > input:not(:disabled):not(:checked) + span:hover::before {
+  border-color: #b3d7ff;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox > input:not(:disabled):active + span::before {
+  background-color: #b3d7ff;
+  border-color: $yellow;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox > input:focus + span::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox > input:focus:not(:checked) + span::before {
+  border-color: $yellow;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox > input:checked + span::before {
+  border-color: #0b76ef;
+  background-color: $text-color;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox > input:disabled + span::before {
+  background-color: #e9ecef;
+}

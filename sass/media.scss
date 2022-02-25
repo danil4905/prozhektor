@@ -1,0 +1,80 @@
+@import "variables";
+
+/* Large desktop */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .title {
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+  .about__list-item {
+    width: 350px;
+  }
+  .slider .carousel__card {
+    width: 1000px !important;
+  }
+  .timing-item {
+    grid-template-columns: 280px 380px 420px;
+  }
+}
+.no_water-wrapper {
+  h1 {
+    left: 10%;
+    top: 230px;
+  }
+}
+
+@media (min-width: 979px) and (max-width: 1199px) {
+  body {
+    overflow-x: hidden;
+  }
+  .title {
+    p {
+      font-size: 20px;
+    }
+  }
+  .intro__date {
+    img {
+      width: 80px;
+    }
+
+    font-size: 35px;
+  }
+}
+.intro__title {
+  svg {
+    width: 800px;
+  }
+}
+.intro__main {
+  .intro__main-text {
+    font-size: 24px;
+  }
+  .intro-btn {
+    max-width: 280px;
+    font-size: 20px;
+  }
+}
+.intro__location {
+  font-size: 22px;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
