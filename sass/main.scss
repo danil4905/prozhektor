@@ -93,6 +93,13 @@ section {
 #about,#projectors,#timing,#contacts,#signin {
   padding-top: 100px;
 }
+.displayNone {
+  display: none;
+}
+.displayYes {
+  display: block;
+}
+
 
 @import "header";
 @import "./sections/intro";

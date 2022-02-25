@@ -48,3 +48,11 @@
   font-size: 18px;
   line-height: 150%;
 }
+
+.timing__content-list__phone {
+  display: none;
+}
+.timing__content-list__phone .timing-item {
+  display: grid;
+  grid-template-columns: 300px 400px;
+}

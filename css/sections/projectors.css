@@ -1,3 +1,7 @@
+#carousel-speakers {
+  display: none;
+}
+
 .slider {
   display: flex;
   flex-wrap: nowrap;

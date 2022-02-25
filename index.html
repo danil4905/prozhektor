@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Проектор</title>
+    <title>Прожектор</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="js/slick.css"/>
+    <link rel="stylesheet" href="js/slick-theme.css">
 </head>
 <body>
 <header id="header">
     <div class="container">
+        <div class="burger">
+            <span class="tel__wrapper">
+                                <a href="tel:+79827906743" class="phone">
+                                    <img src="./img/phone.svg" alt="#" class="phone-icon"> 8 982 790 67 43</a>
+                            </span>
+            <nav class="header__nav">
+                <li class="burger-item"><a href="#about">О конференции</a></li>
+                <li class="burger-item"><a href="#projectors">Прожекторы</a></li>
+                <li class="burger-item"><a href="#timing">Тайминг</a></li>
+                <li class="burger-item"><a href="#contacts">Контакты</a></li>
+            </nav>
+            <div class="menu-burger__header">
+                <span></span>
+            </div>
+        </div>
         <div class="header__wrapper">
             <nav class="header__navigation" id="header-menu__list">
                 <li class="navigation-item"><a href="#about">О конференции</a></li>
@@ -37,7 +54,7 @@
                 <div class="intro__main">
                     <div class="intro__title">
                         <svg width="982" height="115" viewBox="0 0 982 115" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
+                             xmlns="http://www.w3.org/2000/svg" class="bigPro">
                             <path d="M35.7199 0H0V114.522H35.7199V29.7757H59.5334V114.522H95.2533V0H35.7199Z"
                                   fill="#FFFF00"/>
                             <path d="M711.889 0H685.964V29.6055H711.889V113.867H747.773V29.6055H773.68V0H711.889Z"
@@ -55,6 +72,27 @@
                             <path d="M165.639 0H111.017V114.522H146.851V93.1063H165.639L165.878 90.2598C165.741 92.0596 165.639 93.1063 165.639 93.1063C181.201 88.9508 194.409 76.9914 201.473 62.3328V29.7922C194.988 14.2328 185.553 5.85712 165.639 0ZM146.851 63.3307V29.7757H165.639C164.257 40.4916 163.898 49.3751 165.639 63.3307H146.851Z"
                                   fill="#FFFF00"/>
                             <path d="M946.167 0H891.543V113.867H927.378V92.5743H946.167L946.406 89.744C946.268 91.5335 946.167 92.5743 946.167 92.5743C961.728 88.4425 974.935 76.5514 982 61.9766V29.622C975.514 14.1514 966.078 5.82365 946.167 0ZM927.378 62.9688V29.6055H946.167C944.783 40.2602 944.424 49.0929 946.167 62.9688H927.378Z"
+                                  fill="#FFFF00"/>
+                        </svg>
+                        <svg width="251" height="30" viewBox="0 0 251 30" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             class="smallPro">
+                            <path d="M9.10012 0H0V29.1759H9.10012V7.58573H15.1669V29.1759H24.267V0H9.10012Z"
+                                  fill="#FFFF00"/>
+                            <path d="M181.363 0H174.758V7.54238H181.363V29.0092H190.505V7.54238H197.105V0H181.363Z"
+                                  fill="#FFFF00"/>
+                            <path d="M169.803 4.52545V0H162.683L156.655 10.4516V0H147.521V29.0092H156.655V14.9687L164.035 29.0092H170.916V23.6549L163.909 12.822L169.803 4.52545Z"
+                                  fill="#FFFF00"/>
+                            <path d="M118.824 4.52545V0H111.704L105.671 10.4516V0H96.5375V10.5221L90.4662 0H83.3462V4.52545L89.2398 12.822L82.2277 23.6549V29.0092H89.1129L96.5374 14.8904V29.0092H105.671V14.9687L113.052 29.0092H119.938V23.6549L112.926 12.822L118.824 4.52545Z"
+                                  fill="#FFFF00"/>
+                            <path d="M132.282 17.4842H139.331V9.94183H132.282V7.54238H140.873V0H123.081V29.0092H141.587V21.4668H132.282V17.4842Z"
+                                  fill="#FFFF00"/>
+                            <path d="M69.2215 0C69.2215 0 69.2607 0.237547 69.3131 0.646047L69.2215 0H63.1111C58.3623 0.99619 55.9925 3.08017 53.9454 7.40654V21.5902C55.5862 25.4873 58.6329 28.2381 63.1111 29.1759H69.2215L69.3611 27.517C69.2957 28.5214 69.2215 29.1759 69.2215 29.1759C73.2019 28.1172 76.5801 25.0704 78.387 21.3359V7.58573C76.7285 3.62598 74.3149 1.49218 69.2215 0ZM63.1111 21.5902C63.7047 16.1718 63.8007 12.9999 63.1111 7.58573H69.2215C68.0435 13.2375 68.3879 15.8923 69.2215 21.5902H63.1111Z"
+                                  fill="#FFFF00"/>
+                            <path d="M214.823 0C214.823 0 214.862 0.236189 214.914 0.642355L214.823 0H208.712C203.964 0.990498 201.593 3.06257 199.547 7.36422V21.4668C201.188 25.3417 204.234 28.0767 208.712 29.0092H214.823L214.962 27.3597C214.897 28.3584 214.823 29.0092 214.823 29.0092C218.803 27.9565 222.182 24.9271 223.988 21.214V7.54238C222.334 3.60526 219.916 1.48365 214.823 0ZM208.712 21.4668C209.306 16.0794 209.402 12.9256 208.712 7.54238H214.823C213.645 13.1619 213.989 15.8015 214.823 21.4668H208.712Z"
+                                  fill="#FFFF00"/>
+                            <path d="M42.1987 0H28.283V29.1759H37.4123V23.72H42.1987L42.2596 22.9948C42.2248 23.4534 42.1987 23.72 42.1987 23.72C46.1634 22.6614 49.5283 19.6145 51.3279 15.8801V7.58995C49.6757 3.62598 47.272 1.49218 42.1987 0ZM37.4123 16.1343V7.58573H42.1987C41.8466 10.3158 41.7552 12.5789 42.1987 16.1343H37.4123Z"
+                                  fill="#FFFF00"/>
+                            <path d="M241.048 0H227.132V29.0092H236.262V23.5845H241.048L241.109 22.8634C241.074 23.3193 241.048 23.5845 241.048 23.5845C245.013 22.5319 248.377 19.5025 250.177 15.7893V7.54658C248.525 3.60526 246.121 1.48365 241.048 0ZM236.262 16.0421V7.54238H241.048C240.696 10.2568 240.604 12.5071 241.048 16.0421H236.262Z"
                                   fill="#FFFF00"/>
                         </svg>
                     </div>
@@ -169,8 +207,157 @@
                         </p>
                     </div>
                 </div>
+                <div class="item carousel__card last-card" style="width:1020px">
+                    <img src="./img/shelkonogova.png" alt="Ольга Щелконогова">
+                    <div class="carousel__card-content">
+                        <div class="person">
+                            <h4 class="person__name">Ольга Щелконогова</h4>
+                            <span class="person__status">Проектный менеджер, ProActor Solutions</span>
+                        </div>
+                        <p class="person__quote">
+                            «Особенности в управлении проектами при цифровизации госуправления»<br><br>
+
+                            О потребностях в цифровой трансформации и ключевых<br>ролях в команде проекта в системе
+                            госуправления.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="carousel" id="carousel-speakers">
+            <div class="item carousel__card">
+                <div class="container">
+
+                    <div class="carousel__card-content">
+                        <p class="person__quote">
+                            «Как мы сами создаем себе проблемы»<br><br>
+
+                            Разбор типовых ситуаций в проектной деятельности.
+                            Как руководителю проекта посмотреть на проблему глазами заказчика и что с этим делать
+                            дальше.
+                        </p>
+                        <div class="person">
+                            <div class="person-avatar">
+                                <img src="./img/losh_mobile.png" alt="Александра Лощенова">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="person__name">Александра Лощенова</h4>
+                                <span class="person__status">Евангелист ELMA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item carousel__card">
+                <div class="container">
+                    <div class="carousel__card-content">
+                        <p class="person__quote">
+                            «Enterprise проекты. Путь в тысячу миль»<br><br>
+                            О собственном инструментарии управления проектами или как быть «сапожником в сапогах»
+                        </p>
+                        <div class="person">
+                            <div class="person-avatar">
+                                <img src="./img/oparin_mobile.png" alt="Дмитрий Опарин">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="person__name">Дмитрий Опарин</h4>
+                                <span class="person__status">Руководитель проектного офиса</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item carousel__card">
+                <div class="container">
+                    <div class="carousel__card-content">
+                        <p class="person__quote">
+                            «Интуитивный менеджмент/универсальный менеджер»<br><br>
+                            О специфике работы в маленьких и средних компаниях. Когда менеджер многофункциональный и
+                            может заменить любого сотрудника в команде.
+                        </p>
+                        <div class="person">
+                            <div class="person-avatar">
+                                <img src="./img/karavaeva_mobile.png" alt="Анастасия Караваева ">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="person__name">Анастасия Караваева </h4>
+                                <span class="person__status">Проектный менеджер <br>
+«Русские информационные технологии»</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item carousel__card">
+                <div class="container">
+                    <div class="carousel__card-content">
+                        <p class="person__quote">
+                            «Управляй проектом без потерь»<br><br>
+
+                            Про потери, их влияние на результат и затраты проекта. Как их идентифицировать и снизить
+                            влияние.
+                        </p>
+                        <div class="person">
+                            <div class="person-avatar">
+                                <img src="./img/gordienko_mobile.png" alt="Ирина Гордиенко">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="person__name">Ирина Гордиенко</h4>
+                                <span class="person__status">Проектный менеджер 65 apps</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item carousel__card">
+                <div class="container">
+                    <div class="carousel__card-content">
+                        <p class="person__quote">
+                            «Особенности управления проектами в строительстве»<br><br>
+
+                            Про жизненный цикл проекта в строительстве, болях заказчика и о том, как эти боли закрыть.
+                        </p>
+                        <div class="person">
+                            <div class="person-avatar">
+                                <img src="./img/sadroslamov_mobile.png" alt="Роман Садрисламов ">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="person__name">Роман Садрисламов </h4>
+                                <span class="person__status">Руководитель группы разработки<br>и поддержки ПО, Талан</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item carousel__card">
+                <div class="container">
+                    <div class="carousel__card-content">
+                        <p class="person__quote">
+                            «Особенности в управлении проектами при цифровизации госуправления»<br><br>
+
+                            О потребностях в цифровой трансформации и ключевых ролях в команде проекта в системе
+                            госуправления.
+                        </p>
+                        <div class="person">
+                            <div class="person-avatar">
+                                <img src="./img/shelkonogova_mobile.png" alt="Ольга Щелконогова">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="person__name">Александра Лощенова</h4>
+                                <span class="person__status">Проектный менеджер, ProActor Solutions</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
     <section id="no_water">
         <div class="no_water-wrapper">
@@ -230,6 +417,56 @@
                         <div class="event__time">14:00 - 14:40</div>
                         <div class="event__speaker">Роман Садрисламов</div>
                         <div class="event__theme">«Особенности управления проектами в строительстве»</div>
+                    </li>
+                </ul>
+                <ul class="timing__content-list__phone">
+                    <li class="timing-item">
+                        <div class="event__time">9:30 - 10:00</div>
+                        <div class="event__name">Регистрация, приветсвенный кофе</div>
+                    </li>
+                    <li class="timing__splitter"></li>
+                    <li class="timing-item">
+                        <div class="event__time">10:00 - 10:40</div>
+                        <div class="event__speaker">Александра Лощенова
+                            <div class="event__theme">«Как мы сами создаем себе проблемы»</div>
+                        </div>
+                    </li>
+                    <li class="timing-item">
+                        <div class="event__time">10:40 - 11:20</div>
+                        <div class="event__speaker">Дмитрий Опарин
+                            <div class="event__theme">«Enterprise проекты. Путь в тысячу миль»</div>
+                        </div>
+                    </li>
+                    <li class="timing-item">
+                        <div class="event__time">11:20 - 12:00</div>
+                        <div class="event__speaker">Ольга Щелконогова
+                            <div class="event__theme">«Особенности в управлении проектами при<br>цифровизации
+                                госуправления»
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timing-item">
+                        <div class="event__time">12:00 - 12:40</div>
+                        <div class="event__speaker">Анастасия Караваева
+                            <div class="event__theme">«Интуитивный менеджмент/универсальный менеджер»</div>
+                        </div>
+                    </li>
+                    <li class="timing-item">
+                        <div class="event__time">12:40 - 13:20</div>
+                        <div class="event__name">Кофе брейк</div>
+                    </li>
+                    <li class="timing__splitter"></li>
+                    <li class="timing-item">
+                        <div class="event__time">13:20 - 14:00</div>
+                        <div class="event__speaker">Ирина Гордиенко
+                            <div class="event__theme">«Управляй проектом без потерь»</div>
+                        </div>
+                    </li>
+                    <li class="timing-item">
+                        <div class="event__time">14:00 - 14:40</div>
+                        <div class="event__speaker">Роман Садрисламов
+                            <div class="event__theme">«Особенности управления проектами в строительстве»</div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -310,20 +547,23 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+
 <script>
     SmoothScroll({
-        animationTime    : 300,
-        stepSize         : 75,
-        accelerationDelta : 30,
-        accelerationMax   : 2,
-        keyboardSupport   : true,
-        arrowScroll       : 50,
-        pulseAlgorithm   : true,
-        pulseScale       : 4,
-        pulseNormalize   : 1,
-        touchpadSupport   : true,
+        animationTime: 300,
+        stepSize: 75,
+        accelerationDelta: 30,
+        accelerationMax: 2,
+        keyboardSupport: true,
+        arrowScroll: 50,
+        pulseAlgorithm: true,
+        pulseScale: 4,
+        pulseNormalize: 1,
+        touchpadSupport: true,
     })
 </script>
 <script src="./js/script.js"></script>

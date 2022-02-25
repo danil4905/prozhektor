@@ -15,7 +15,11 @@
   width: 100%;
   height: 100%;
 }
-
+.intro__title {
+  svg {
+    width: 982px;
+  }
+}
 .intro__date {
   font-weight: 900;
   font-size: 38.1518px;
@@ -38,5 +42,7 @@
   max-width: 330px;
   height: 70px;
 }
-
+.smallPro {
+  display: none;
+}
 

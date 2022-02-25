@@ -4,7 +4,9 @@ $finalHeight: 455px;
 $finalWidth: 6 * 1020px;
 $scrollBarHeight: 1px;
 
-
+#carousel-speakers {
+  display: none;
+}
 .slider {
   display: flex;
   flex-wrap: nowrap;
@@ -15,7 +17,6 @@ $scrollBarHeight: 1px;
     display: none;
   }
   scrollbar-width: none;
-
   .carousel__card {
     background-color: $lightBlue;
     width: 1020px !important;
