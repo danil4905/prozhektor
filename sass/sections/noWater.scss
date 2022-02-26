@@ -25,10 +25,8 @@
   background-color: $lightBlue;
   width: 1015px;
   height: 546px;
-
-  &::before {
-    position: absolute;
-    content: url("../img/head.png");
-    bottom: -5px;
-  }
+}
+.head-img {
+  margin-top: -90px;
+  width: 100%;
 }

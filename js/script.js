@@ -1,10 +1,34 @@
 //Изменение каруселей
 
 $(document).ready(function () {
-
+    let burger = document.getElementById('header__nav');
+    let burgerBtn = $('.menu-burger__header');
+    burger.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') {
+            burger.classList.remove('open-burger')
+            burger.classList.add('closed-burger')
+            document.getElementsByClassName('phone')[0].style.visibility = 'visible';
+            burgerBtn.removeClass('open-menu')
+            $('.wrapper').removeClass('wrapper--overlay');
+            e.preventDefault();
+            var id = $(e.target).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 10);
+        }
+    })
     $(document).ready(function () {
         $('.menu-burger__header').click(function () {
             $('.menu-burger__header').toggleClass('open-menu');
+            $('.wrapper').toggleClass('wrapper--overlay');
+            if (burger.classList.contains('open-burger')) {
+                burger.classList.remove('open-burger');
+                burger.classList.add('closed-burger');
+                document.getElementsByClassName('phone')[0].style.visibility = 'visible';
+            } else {
+                burger.classList.remove('closed-burger');
+                burger.classList.add('open-burger');
+                document.getElementsByClassName('phone')[0].style.visibility = 'hidden';
+            }
         });
     });
     $(document).ready(function () {

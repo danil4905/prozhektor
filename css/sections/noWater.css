@@ -23,8 +23,8 @@
   width: 1015px;
   height: 546px;
 }
-.no_water-img::before {
-  position: absolute;
-  content: url("../img/head.png");
-  bottom: -5px;
+
+.head-img {
+  margin-top: -90px;
+  width: 100%;
 }
