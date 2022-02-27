@@ -15,7 +15,15 @@ $(document).ready(function () {
                 top = $(id).offset().top;
             $('body,html').animate({scrollTop: top}, 10);
         }
+
     })
+    console.log($('a[data-modal]'))
+    $('#modal-window').modal();
+    $('a[data-modal]').click(function(event) {
+        console.log('lol')
+        $(this).modal();
+        return false;
+    });
     $(document).ready(function () {
         $('.menu-burger__header').click(function () {
             $('.menu-burger__header').toggleClass('open-menu');
