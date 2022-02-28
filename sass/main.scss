@@ -47,6 +47,7 @@ button, .signin-btn {
   font-size: 24px;
   @include flex-center;
   border-radius: 0;
+  cursor: pointer;
 }
 
 ul {
