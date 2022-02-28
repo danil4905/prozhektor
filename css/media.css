@@ -3,9 +3,14 @@
 @media (min-width: 1201px) and (max-width: 1400px) {
   .title h2 {
     font-size: 40px;
+    width: calc(33% + 15px);
   }
   .title p {
     font-size: 22px;
+  }
+
+  .about__title h2 {
+    margin-right: 72px;
   }
 
   .about__list-item {
