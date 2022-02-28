@@ -19,32 +19,28 @@ $(document).ready(function () {
     })
     console.log($('a[data-modal]'))
     $('#modal-window').modal();
-    $('a[data-modal]').click(function(event) {
+    $('a[data-modal]').click(function (event) {
         console.log('lol')
         $(this).modal();
         return false;
     });
-    $(document).ready(function () {
-        $('.menu-burger__header').click(function () {
-            $('.menu-burger__header').toggleClass('open-menu');
-            $('.wrapper').toggleClass('wrapper--overlay');
-            if (burger.classList.contains('open-burger')) {
-                burger.classList.remove('open-burger');
-                burger.classList.add('closed-burger');
-                document.getElementsByClassName('phone')[0].style.visibility = 'visible';
-            } else {
-                burger.classList.remove('closed-burger');
-                burger.classList.add('open-burger');
-                document.getElementsByClassName('phone')[0].style.visibility = 'hidden';
-            }
-        });
+    $('.menu-burger__header').click(function () {
+        $('.menu-burger__header').toggleClass('open-menu');
+        $('.wrapper').toggleClass('wrapper--overlay');
+        if (burger.classList.contains('open-burger')) {
+            burger.classList.remove('open-burger');
+            burger.classList.add('closed-burger');
+            document.getElementsByClassName('phone')[0].style.visibility = 'visible';
+        } else {
+            burger.classList.remove('closed-burger');
+            burger.classList.add('open-burger');
+            document.getElementsByClassName('phone')[0].style.visibility = 'hidden';
+        }
     });
-    $(document).ready(function () {
-        $('#carousel-speakers').slick({
-            infinite: true,
-            dots: true,
-            arrows: false
-        });
+    $('#carousel-speakers').slick({
+        infinite: true,
+        dots: true,
+        arrows: false
     });
     console.log(window.innerWidth)
     if (window.innerWidth < 990) {
@@ -72,25 +68,84 @@ $(document).ready(function () {
     for (let elm of elements) {
         observer.observe(elm);
     }
-});
-document.getElementById("horizontal-scroller")
-    .addEventListener('wheel', function (event) {
-        if (event.deltaMode == event.DOM_DELTA_PIXEL) {
-            var modifier = 1;
-            // иные режимы возможны в Firefox
-        } else if (event.deltaMode == event.DOM_DELTA_LINE) {
-            var modifier = parseInt(getComputedStyle(this).lineHeight);
-        } else if (event.deltaMode == event.DOM_DELTA_PAGE) {
-            var modifier = this.clientHeight;
-        }
-        if (event.deltaY != 0) {
-            // замена вертикальной прокрутки горизонтальной
-            this.animate({scrollLeft: modifier * event.deltaY}, 100);
 
-            this.scrollLeft += modifier * event.deltaY;
-            event.preventDefault();
-        }
+    console.clear();
+
+    TweenLite.defaultEase = Linear.easeNone;
+    var controller = new ScrollMagic.Controller();
+    var tl = new TimelineMax();
+
+    var ww = window.innerWidth;
+
+    var noSlides = $(".horizontal__card").length;
+    var slideWidth = $(".horizontal__card").width();
+    console.log(slideWidth)
+    var slideContainerWidth = slideWidth*noSlides-ww;
+
+    console.log(noSlides, slideContainerWidth);
+
+    var ww = window.innerWidth;
+
+
+    var actionHorizontal = new TimelineMax()
+        .to("#slideContainer", 1, {x: -slideContainerWidth})
+
+
+    var horizontal = createHorizontal();
+
+    function createHorizontal() {
+        return new ScrollMagic.Scene({
+            triggerElement: "#horizontal-scroller",
+            triggerHook: "onLeave",
+            duration: slideContainerWidth
+        })
+            .setPin("#horizontal-scroller")
+            .setTween(actionHorizontal)
+            .addIndicators({
+                colorTrigger: "white",
+                colorStart: "white",
+                colorEnd: "white",
+            })
+            .addTo(controller);
+
+    }
+
+
+    $(window).resize(function(){
+
+        ww = window.innerWidth;
+        slideContainerWidth = slideWidth*noSlides-ww;
+
+
+        horizontal.destroy(true);
+        horizontal = createHorizontal();
+
+        console.log(ww, slideContainerWidth);
+
     });
+
+
+
+
+});
+// document.getElementById("horizontal-scroller")
+//     .addEventListener('wheel', function (event) {
+//         if (event.deltaMode == event.DOM_DELTA_PIXEL) {
+//             var modifier = 1;
+//             // иные режимы возможны в Firefox
+//         } else if (event.deltaMode == event.DOM_DELTA_LINE) {
+//             var modifier = parseInt(getComputedStyle(this).lineHeight);
+//         } else if (event.deltaMode == event.DOM_DELTA_PAGE) {
+//             var modifier = this.clientHeight;
+//         }
+//         if (event.deltaY != 0) {
+//             // замена вертикальной прокрутки горизонтальной
+//             this.animate({scrollLeft: modifier * event.deltaY}, 100);
+//
+//             this.scrollLeft += modifier * event.deltaY;
+//             event.preventDefault();
+//         }
+//     });
 
 //Скролл по пунктам страницы
 

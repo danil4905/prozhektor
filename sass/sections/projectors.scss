@@ -7,21 +7,38 @@ $scrollBarHeight: 1px;
 #carousel-speakers {
   display: none;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.horizontal__card {
+  .carousel__card-content {
+    .person {
+      height: 85px;
+    }
+  }
+}
+
 .slider {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
+  padding: 300px 0 0;
 
   &::-webkit-scrollbar {
     display: none;
   }
+
   scrollbar-width: none;
+
   .carousel__card {
     background-color: $lightBlue;
     width: 1020px !important;
     height: 455px;
-    flex: 0 0 auto;
+    float: left;
+    position: relative;
     display: flex;
     font-size: 18px;
     margin-right: 20px;
@@ -29,6 +46,11 @@ $scrollBarHeight: 1px;
     img {
       margin-right: 20px;
     }
+  }
+
+  .sections {
+    width: 600%;
+    height: 100%;
   }
 }
 

@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* Large desktop */
 @media (min-width: 1201px) and (max-width: 1400px) {
+  .person__quote {
+    margin-top: 50px;
+  }
+
   .title h2 {
     font-size: 40px;
     width: calc(33% + 15px);
@@ -40,6 +44,10 @@
   }
 }
 @media (min-width: 991px) and (max-width: 1200px) {
+  .person__quote {
+    margin-top: 50px;
+  }
+
   .title p {
     font-size: 20px;
   }

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="js/slick.css"/>
     <link rel="stylesheet" href="js/slick-theme.css">
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script  src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
     <link rel="stylesheet" href="revealator/fm.revealator.jquery.min.css">
     <script src="revealator/fm.revealator.jquery.min.js"></script>
 </head>
@@ -149,91 +149,93 @@
                         с&nbsp;авторскими тренингами, а настоящие практики, развивающие<br>проекты в своем бизнесе.</p>
                 </div>
             </div>
-            <div class="slider squares" id="horizontal-scroller" style="overflow:auto">
-                <div class="item carousel__card" style="width:1020px">
-                    <img src="./img/loshenova%20(2).png" alt="Александра Лощенова">
-                    <div class="carousel__card-content">
-                        <div class="person">
-                            <h4 class="person__name">Александра Лощенова</h4>
-                            <span class="person__status">Евангелист ELMA</span>
-                        </div>
-                        <p class="person__quote">
-                            «Как мы сами создаем себе проблемы»<br><br>
+            <div class="slider" id="horizontal-scroller" style="overflow:auto">
+                <div class="sections" id="slideContainer">
+                    <div class="item carousel__card horizontal__card">
+                        <img src="./img/loshenova%20(2).png" alt="Александра Лощенова">
+                        <div class="carousel__card-content">
+                            <div class="person">
+                                <h4 class="person__name">Александра Лощенова</h4>
+                                <span class="person__status">Евангелист ELMA</span>
+                            </div>
+                            <p class="person__quote">
+                                «Как мы сами создаем себе проблемы»<br><br>
 
-                            Разбор типовых ситуаций в проектной деятельности.
-                            Как руководителю проекта посмотреть на проблему глазами заказчика и что с этим делать
-                            дальше.
-                        </p>
-                    </div>
-                </div>
-                <div class="item carousel__card" style="width:1020px">
-                    <img src="./img/oparin%20(2).png" alt="Дмитрий Опарин">
-                    <div class="carousel__card-content">
-                        <div class="person">
-                            <h4 class="person__name">Дмитрий Опарин</h4>
-                            <span class="person__status">Руководитель проектного офиса</span>
+                                Разбор типовых ситуаций в проектной деятельности.
+                                Как руководителю проекта посмотреть на проблему глазами заказчика и что с этим делать
+                                дальше.
+                            </p>
                         </div>
-                        <p class="person__quote">
-                            «Enterprise проекты. Путь в тысячу миль»<br><br>
-                            О собственном инструментарии управления проектами или как быть «сапожником в сапогах»
-                        </p>
                     </div>
-                </div>
-                <div class="item carousel__card">
-                    <img src="./img/karavaeva.png" alt="Анастасия Караваева ">
-                    <div class="carousel__card-content">
-                        <div class="person">
-                            <h4 class="person__name">Анастасия Караваева </h4>
-                            <span class="person__status">Проектный менеджер<br>«Русские информационные технологии»</span>
+                    <div class="item carousel__card horizontal__card">
+                        <img src="./img/oparin%20(2).png" alt="Дмитрий Опарин">
+                        <div class="carousel__card-content">
+                            <div class="person">
+                                <h4 class="person__name">Дмитрий Опарин</h4>
+                                <span class="person__status">Руководитель проектного офиса</span>
+                            </div>
+                            <p class="person__quote">
+                                «Enterprise проекты. Путь в тысячу миль»<br><br>
+                                О собственном инструментарии управления проектами или как быть «сапожником в сапогах»
+                            </p>
                         </div>
-                        <p class="person__quote">
-                            «Интуитивный менеджмент/универсальный менеджер»<br><br>
-                            О специфике работы в маленьких и средних компаниях. Когда менеджер многофункциональный и
-                            может заменить любого сотрудника в команде.
-                        </p>
                     </div>
-                </div>
-                <div class="item carousel__card">
-                    <img src="./img/gordienko.png" alt="Ирина Гордиенко">
-                    <div class="carousel__card-content">
-                        <div class="person">
-                            <h4 class="person__name">Ирина Гордиенко</h4>
-                            <span class="person__status">Проектный менеджер 65 apps</span>
+                    <div class="item carousel__card horizontal__card">
+                        <img src="./img/karavaeva.png" alt="Анастасия Караваева ">
+                        <div class="carousel__card-content">
+                            <div class="person">
+                                <h4 class="person__name">Анастасия Караваева </h4>
+                                <span class="person__status">Проектный менеджер<br>«Русские информационные технологии»</span>
+                            </div>
+                            <p class="person__quote">
+                                «Интуитивный менеджмент/универсальный менеджер»<br><br>
+                                О специфике работы в маленьких и средних компаниях. Когда менеджер многофункциональный и
+                                может заменить любого сотрудника в команде.
+                            </p>
                         </div>
-                        <p class="person__quote">
-                            «Управляй проектом без потерь»<br><br>
-                            Про потери, их влияние на результат и затраты проекта. Как их идентифицировать и снизить
-                            влияние.
-                        </p>
                     </div>
-                </div>
-                <div class="item carousel__card">
-                    <img src="./img/sadrislamov.png" alt="Роман Садрисламов">
-                    <div class="carousel__card-content">
-                        <div class="person">
-                            <h4 class="person__name">Роман Садрисламов </h4>
-                            <span class="person__status">Руководитель группы разработки и поддержки ПО,Талан</span>
+                    <div class="item carousel__card horizontal__card">
+                        <img src="./img/gordienko.png" alt="Ирина Гордиенко">
+                        <div class="carousel__card-content">
+                            <div class="person">
+                                <h4 class="person__name">Ирина Гордиенко</h4>
+                                <span class="person__status">Проектный менеджер 65 apps</span>
+                            </div>
+                            <p class="person__quote">
+                                «Управляй проектом без потерь»<br><br>
+                                Про потери, их влияние на результат и затраты проекта. Как их идентифицировать и снизить
+                                влияние.
+                            </p>
                         </div>
-                        <p class="person__quote">
-                            «Особенности управления проектами в строительстве»<br><br>
-                            Про жизненный цикл проекта в строительстве, болях заказчика и о том, как эти боли
-                            закрыть.
-                        </p>
                     </div>
-                </div>
-                <div class="item carousel__card last-card" style="width:1020px">
-                    <img src="./img/shelkonogova.png" alt="Ольга Щелконогова">
-                    <div class="carousel__card-content">
-                        <div class="person">
-                            <h4 class="person__name">Ольга Щелконогова</h4>
-                            <span class="person__status">Проектный менеджер, ProActor Solutions</span>
+                    <div class="item carousel__card horizontal__card">
+                        <img src="./img/sadrislamov.png" alt="Роман Садрисламов">
+                        <div class="carousel__card-content">
+                            <div class="person">
+                                <h4 class="person__name">Роман Садрисламов </h4>
+                                <span class="person__status">Руководитель группы разработки и поддержки ПО,Талан</span>
+                            </div>
+                            <p class="person__quote">
+                                «Особенности управления проектами в строительстве»<br><br>
+                                Про жизненный цикл проекта в строительстве, болях заказчика и о том, как эти боли
+                                закрыть.
+                            </p>
                         </div>
-                        <p class="person__quote">
-                            «Особенности в управлении проектами при цифровизации госуправления»<br><br>
+                    </div>
+                    <div class="item carousel__card horizontal__card last-card">
+                        <img src="./img/shelkonogova.png" alt="Ольга Щелконогова">
+                        <div class="carousel__card-content">
+                            <div class="person">
+                                <h4 class="person__name">Ольга Щелконогова</h4>
+                                <span class="person__status">Проектный менеджер, ProActor Solutions</span>
+                            </div>
+                            <p class="person__quote">
+                                «Особенности в управлении проектами при цифровизации госуправления»<br><br>
 
-                            О потребностях в цифровой трансформации и ключевых<br>ролях в команде проекта в системе
-                            госуправления.
-                        </p>
+                                О потребностях в цифровой трансформации и ключевых<br>ролях в команде проекта в системе
+                                госуправления.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -375,7 +377,7 @@
         </section>
         <section id="no_water">
             <div class="no_water-wrapper">
-                <h1 class="element-animation revealator-slideright revealator-once" >Никакой воды,<br>
+                <h1 class="element-animation revealator-slideright revealator-once">Никакой воды,<br>
                     только реальный опыт</h1>
                 <div class="no_water-img revealator-slideleft revealator-once">
                     <img src="img/head.png" alt="" class="head-img">
@@ -392,7 +394,7 @@
                     <ul class="timing__content-list">
                         <li class="timing-item">
                             <div class="event__time">9:30 - 10:00</div>
-                            <div class="event__name">Регистрация, приветсвенный кофе</div>
+                            <div class="event__name">Регистрация, приветственный кофе</div>
                             <div class="event__theme"></div>
                         </li>
                         <li class="timing__splitter"><span>Время</span><span>Спикер</span><span>Тема</span></li>
@@ -494,7 +496,7 @@
                     <div class="signin-bg">
                         <div class="signin__content">
                             <h2>Зарегистрируйся сейчас</h2>
-                            <form action="submit" class="main-form" id="main-form" method = POST>
+                            <form action="submit" class="main-form" id="main-form" method=POST>
                                 <input type="text" class="input-default" placeholder="Иван Иванов" required>
                                 <input type="email" class="input-default" placeholder="E-Mail" required>
                                 <input type="tel" id="phone" class="input-default" placeholder="Номер телефона"
@@ -514,7 +516,7 @@
                 </div>
             </div>
         </section>
-<!--        <p><a href="#modal-window" data-modal>Open Modal</a></p>-->
+        <!--        <p><a href="#modal-window" data-modal>Open Modal</a></p>-->
         <section id="location">
             <div class="container">
                 <div class="title location__title">
@@ -568,15 +570,18 @@
         <a href="#" rel="modal:close">Close</a>
     </div>
 </div>
-<script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-<script  src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
         integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-<script  type="text/javascript" src="./js/slick.min.js"></script>
-
-<script >
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/ScrollToPlugin.min.js"></script>
+<script>
     SmoothScroll({
         animationTime: 300,
         stepSize: 75,
@@ -590,8 +595,8 @@
         touchpadSupport: true,
     })
 </script>
-<script  src="./js/script.js"></script>
-<script  src="js/forms.js"></script>
+<script src="./js/script.js"></script>
+<script src="js/forms.js"></script>
 <script src="js/nodemailer.js"></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript"> (function (m, e, t, r, i, k, a) {

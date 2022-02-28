@@ -1,3 +1,7 @@
 .location__map iframe {
   filter: grayscale(1);
 }
+
+.location__title {
+  justify-content: space-between;
+}
