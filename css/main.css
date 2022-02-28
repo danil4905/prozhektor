@@ -99,6 +99,10 @@ section {
   padding-top: 100px;
 }
 
+#projectors {
+  margin-bottom: 200px;
+}
+
 .displayNone {
   display: none;
 }
@@ -349,10 +353,9 @@ body {
 
 .slider {
   width: 100%;
-  height: 100vh;
+  height: 455px;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  padding: 300px 0 0;
   scrollbar-width: none;
 }
 .slider::-webkit-scrollbar {
@@ -395,13 +398,14 @@ body {
 }
 
 #no_water {
-  min-height: 686px;
+  min-height: 666px;
 }
 
 .no_water-wrapper {
   position: relative;
 }
 .no_water-wrapper h1 {
+  transition: 1s all ease;
   font-weight: 600;
   font-size: 68px;
   line-height: 150%;
@@ -413,6 +417,7 @@ body {
 }
 
 .no_water-img {
+  transition: 1s all ease;
   position: relative;
   float: right;
   background-color: #F3F0F8;
@@ -486,7 +491,7 @@ body {
 
 #signin {
   min-height: 680px;
-  margin-top: -33%;
+  margin-top: -28%;
 }
 
 .signin-container {

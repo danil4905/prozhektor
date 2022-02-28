@@ -95,7 +95,7 @@ $(document).ready(function () {
 
     function createHorizontal() {
         return new ScrollMagic.Scene({
-            triggerElement: "#horizontal-scroller",
+            triggerElement: "#projectors",
             triggerHook: "onLeave",
             duration: slideContainerWidth
         })
@@ -128,6 +128,7 @@ $(document).ready(function () {
 
 
 });
+
 //Скролл по пунктам страницы
 
 function yScroll() {
