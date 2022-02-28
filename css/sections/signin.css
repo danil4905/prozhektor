@@ -42,6 +42,7 @@
   outline: none;
   color: white;
   width: 416px;
+  border-radius: 0;
 }
 .main-form .input-default::placeholder {
   color: #FFFFFF;

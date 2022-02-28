@@ -21,7 +21,15 @@ $(document).ready(function () {
             }
         }
         if (count === inputs.length) {
-
+            console.log('yes')
+            $.ajax({
+                type: "POST",
+                url: "js/nodemailer.js",
+                data: $("#main-form").serialize(),
+                success: function(data) {
+                    $("#main-form").html(data);
+                }
+            });
         }
     }
 })

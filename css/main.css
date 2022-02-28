@@ -47,6 +47,7 @@ button, .signin-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0;
 }
 
 ul {
@@ -325,11 +326,6 @@ section {
   transition: 0.2s all ease;
   font-size: 18px;
 }
-.about__list-item:hover {
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-}
 
 .about-text {
   padding: 0 38px;
@@ -513,6 +509,7 @@ section {
   outline: none;
   color: white;
   width: 416px;
+  border-radius: 0;
 }
 .main-form .input-default::placeholder {
   color: #FFFFFF;
@@ -1333,5 +1330,9 @@ section {
 
   .head-img {
     margin-top: -15%;
+  }
+
+  .checkbox-label span {
+    font-size: 10px;
   }
 }

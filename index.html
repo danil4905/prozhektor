@@ -492,7 +492,7 @@
                     <div class="signin-bg">
                         <div class="signin__content">
                             <h2>Зарегистрируйся сейчас</h2>
-                            <form action="" class="main-form">
+                            <form action="submit" class="main-form" id="main-form" method = POST>
                                 <input type="text" class="input-default" placeholder="Иван Иванов" required>
                                 <input type="email" class="input-default" placeholder="E-Mail" required>
                                 <input type="tel" id="phone" class="input-default" placeholder="Номер телефона"
@@ -512,7 +512,7 @@
                 </div>
             </div>
         </section>
-        <p><a href="#modal-window" data-modal>Open Modal</a></p>
+<!--        <p><a href="#modal-window" data-modal>Open Modal</a></p>-->
         <section id="location">
             <div class="container">
                 <div class="title location__title">
@@ -590,6 +590,7 @@
 </script>
 <script  src="./js/script.js"></script>
 <script  src="js/forms.js"></script>
+<script src="js/nodemailer.js"></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript"> (function (m, e, t, r, i, k, a) {
     m[i] = m[i] || function () {

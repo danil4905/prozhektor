@@ -14,11 +14,6 @@
   padding-top:30px;
   transition: 0.2s all ease;
   font-size: $sm;
-  &:hover {
-    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-  }
 }
 .about-text {
   padding: 0 38px;
