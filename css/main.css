@@ -71,15 +71,18 @@ p {
   margin-bottom: 0;
 }
 
+.about__title h2 {
+  margin-right: 96px;
+}
+
 .title {
   display: flex;
   margin-bottom: 50px;
-  justify-content: space-between;
 }
 .title h2 {
   font-weight: 600;
   font-size: 45px;
-  margin-right: 50px;
+  width: calc(33% + 25px);
 }
 .title p {
   font-weight: normal;

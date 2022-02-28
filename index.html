@@ -13,6 +13,8 @@
     <script  src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="revealator/fm.revealator.jquery.min.css">
+    <script src="revealator/fm.revealator.jquery.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -138,7 +140,7 @@
         </section>
         <section id="projectors">
             <div class="container">
-                <div class="title about__title">
+                <div class="title">
                     <h2>Прожекторы</h2>
                     <p>Прожекторы конференции — это руководители компаний<br>
                         и&nbsp;бизнес-направлений, которые редко выступают перед<br>аудиторией в&nbsp;Ижевске. Это не
@@ -146,92 +148,92 @@
                         книг, не гастролеры-коучи<br>
                         с&nbsp;авторскими тренингами, а настоящие практики, развивающие<br>проекты в своем бизнесе.</p>
                 </div>
-                <div class="slider squares" id="horizontal-scroller" style="overflow:auto">
-                    <div class="item carousel__card" style="width:1020px">
-                        <img src="./img/loshenova%20(2).png" alt="Александра Лощенова">
-                        <div class="carousel__card-content">
-                            <div class="person">
-                                <h4 class="person__name">Александра Лощенова</h4>
-                                <span class="person__status">Евангелист ELMA</span>
-                            </div>
-                            <p class="person__quote">
-                                «Как мы сами создаем себе проблемы»<br><br>
+            </div>
+            <div class="slider squares" id="horizontal-scroller" style="overflow:auto">
+                <div class="item carousel__card" style="width:1020px">
+                    <img src="./img/loshenova%20(2).png" alt="Александра Лощенова">
+                    <div class="carousel__card-content">
+                        <div class="person">
+                            <h4 class="person__name">Александра Лощенова</h4>
+                            <span class="person__status">Евангелист ELMA</span>
+                        </div>
+                        <p class="person__quote">
+                            «Как мы сами создаем себе проблемы»<br><br>
 
-                                Разбор типовых ситуаций в проектной деятельности.
-                                Как руководителю проекта посмотреть на проблему глазами заказчика и что с этим делать
-                                дальше.
-                            </p>
-                        </div>
+                            Разбор типовых ситуаций в проектной деятельности.
+                            Как руководителю проекта посмотреть на проблему глазами заказчика и что с этим делать
+                            дальше.
+                        </p>
                     </div>
-                    <div class="item carousel__card" style="width:1020px">
-                        <img src="./img/oparin%20(2).png" alt="Дмитрий Опарин">
-                        <div class="carousel__card-content">
-                            <div class="person">
-                                <h4 class="person__name">Дмитрий Опарин</h4>
-                                <span class="person__status">Руководитель проектного офиса</span>
-                            </div>
-                            <p class="person__quote">
-                                «Enterprise проекты. Путь в тысячу миль»<br><br>
-                                О собственном инструментарии управления проектами или как быть «сапожником в сапогах»
-                            </p>
+                </div>
+                <div class="item carousel__card" style="width:1020px">
+                    <img src="./img/oparin%20(2).png" alt="Дмитрий Опарин">
+                    <div class="carousel__card-content">
+                        <div class="person">
+                            <h4 class="person__name">Дмитрий Опарин</h4>
+                            <span class="person__status">Руководитель проектного офиса</span>
                         </div>
+                        <p class="person__quote">
+                            «Enterprise проекты. Путь в тысячу миль»<br><br>
+                            О собственном инструментарии управления проектами или как быть «сапожником в сапогах»
+                        </p>
                     </div>
-                    <div class="item carousel__card">
-                        <img src="./img/karavaeva.png" alt="Анастасия Караваева ">
-                        <div class="carousel__card-content">
-                            <div class="person">
-                                <h4 class="person__name">Анастасия Караваева </h4>
-                                <span class="person__status">Проектный менеджер<br>«Русские информационные технологии»</span>
-                            </div>
-                            <p class="person__quote">
-                                «Интуитивный менеджмент/универсальный менеджер»<br><br>
-                                О специфике работы в маленьких и средних компаниях. Когда менеджер многофункциональный и
-                                может заменить любого сотрудника в команде.
-                            </p>
+                </div>
+                <div class="item carousel__card">
+                    <img src="./img/karavaeva.png" alt="Анастасия Караваева ">
+                    <div class="carousel__card-content">
+                        <div class="person">
+                            <h4 class="person__name">Анастасия Караваева </h4>
+                            <span class="person__status">Проектный менеджер<br>«Русские информационные технологии»</span>
                         </div>
+                        <p class="person__quote">
+                            «Интуитивный менеджмент/универсальный менеджер»<br><br>
+                            О специфике работы в маленьких и средних компаниях. Когда менеджер многофункциональный и
+                            может заменить любого сотрудника в команде.
+                        </p>
                     </div>
-                    <div class="item carousel__card">
-                        <img src="./img/gordienko.png" alt="Ирина Гордиенко">
-                        <div class="carousel__card-content">
-                            <div class="person">
-                                <h4 class="person__name">Ирина Гордиенко</h4>
-                                <span class="person__status">Проектный менеджер 65 apps</span>
-                            </div>
-                            <p class="person__quote">
-                                «Управляй проектом без потерь»<br><br>
-                                Про потери, их влияние на результат и затраты проекта. Как их идентифицировать и снизить
-                                влияние.
-                            </p>
+                </div>
+                <div class="item carousel__card">
+                    <img src="./img/gordienko.png" alt="Ирина Гордиенко">
+                    <div class="carousel__card-content">
+                        <div class="person">
+                            <h4 class="person__name">Ирина Гордиенко</h4>
+                            <span class="person__status">Проектный менеджер 65 apps</span>
                         </div>
+                        <p class="person__quote">
+                            «Управляй проектом без потерь»<br><br>
+                            Про потери, их влияние на результат и затраты проекта. Как их идентифицировать и снизить
+                            влияние.
+                        </p>
                     </div>
-                    <div class="item carousel__card">
-                        <img src="./img/sadrislamov.png" alt="Роман Садрисламов">
-                        <div class="carousel__card-content">
-                            <div class="person">
-                                <h4 class="person__name">Роман Садрисламов </h4>
-                                <span class="person__status">Руководитель группы разработки и поддержки ПО,Талан</span>
-                            </div>
-                            <p class="person__quote">
-                                «Особенности управления проектами в строительстве»<br><br>
-                                Про жизненный цикл проекта в строительстве, болях заказчика и о том, как эти боли
-                                закрыть.
-                            </p>
+                </div>
+                <div class="item carousel__card">
+                    <img src="./img/sadrislamov.png" alt="Роман Садрисламов">
+                    <div class="carousel__card-content">
+                        <div class="person">
+                            <h4 class="person__name">Роман Садрисламов </h4>
+                            <span class="person__status">Руководитель группы разработки и поддержки ПО,Талан</span>
                         </div>
+                        <p class="person__quote">
+                            «Особенности управления проектами в строительстве»<br><br>
+                            Про жизненный цикл проекта в строительстве, болях заказчика и о том, как эти боли
+                            закрыть.
+                        </p>
                     </div>
-                    <div class="item carousel__card last-card" style="width:1020px">
-                        <img src="./img/shelkonogova.png" alt="Ольга Щелконогова">
-                        <div class="carousel__card-content">
-                            <div class="person">
-                                <h4 class="person__name">Ольга Щелконогова</h4>
-                                <span class="person__status">Проектный менеджер, ProActor Solutions</span>
-                            </div>
-                            <p class="person__quote">
-                                «Особенности в управлении проектами при цифровизации госуправления»<br><br>
+                </div>
+                <div class="item carousel__card last-card" style="width:1020px">
+                    <img src="./img/shelkonogova.png" alt="Ольга Щелконогова">
+                    <div class="carousel__card-content">
+                        <div class="person">
+                            <h4 class="person__name">Ольга Щелконогова</h4>
+                            <span class="person__status">Проектный менеджер, ProActor Solutions</span>
+                        </div>
+                        <p class="person__quote">
+                            «Особенности в управлении проектами при цифровизации госуправления»<br><br>
 
-                                О потребностях в цифровой трансформации и ключевых<br>ролях в команде проекта в системе
-                                госуправления.
-                            </p>
-                        </div>
+                            О потребностях в цифровой трансформации и ключевых<br>ролях в команде проекта в системе
+                            госуправления.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -373,9 +375,9 @@
         </section>
         <section id="no_water">
             <div class="no_water-wrapper">
-                <h1 class="element-animation">Никакой воды,<br>
+                <h1 class="element-animation revealator-slideright revealator-once" >Никакой воды,<br>
                     только реальный опыт</h1>
-                <div class="no_water-img">
+                <div class="no_water-img revealator-slideleft revealator-once">
                     <img src="img/head.png" alt="" class="head-img">
                 </div>
             </div>
@@ -488,7 +490,7 @@
         </section>
         <section id="signin">
             <div class="container">
-                <div class="signin-container">
+                <div class="signin-container revealator-slideup revealator-once">
                     <div class="signin-bg">
                         <div class="signin__content">
                             <h2>Зарегистрируйся сейчас</h2>

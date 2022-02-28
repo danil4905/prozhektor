@@ -69,16 +69,20 @@ h1, h2, h3, h4, h4, h5 {
 p {
   margin-bottom: 0;
 }
-
+.about__title {
+  h2 {
+    margin-right: 96px;
+  }
+}
 .title {
   display: flex;
   margin-bottom: 50px;
-  justify-content: space-between;
+
 
   h2 {
     font-weight: 600;
     font-size: $title;
-    margin-right: 50px;
+    width: calc(33% + 25px);
   }
 
   p {
