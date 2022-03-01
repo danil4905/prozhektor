@@ -24,6 +24,9 @@
             <span class="tel__wrapper">
                                 <a href="tel:+79827906743" class="phone">
                                     <img src="./img/phone.svg" alt="#" class="phone-icon"> 8 982 790 67 43</a>
+                                <a href="https://vk.com/konfa_projector" target="_blank" class="vk">
+                                    <img src="./img/vk.svg" alt="vk">
+                                </a>
                             </span>
                 <div class="menu-burger__header">
                     <span></span>
@@ -38,7 +41,10 @@
                 </nav>
                 <div class="header__tel">
                 <span class="tel__wrapper"><a href="tel:+79827906743" class="phone"> <img src="./img/phone.svg" alt="#"
-                                                                                          class="phone-icon"> 8 982 790 67 43</a></span>
+                                                                                          class="phone-icon"> 8 982 790 67 43</a>
+                <a href="https://vk.com/konfa_projector" target="_blank" class="vk">
+                                    <img src="./img/vk.svg" alt="vk">
+                                </a></span>
                 </div>
             </div>
         </div>
@@ -124,29 +130,47 @@
                         промышленности,
                         на которой вы:</p>
                 </div>
-                <div class="about__list-wrapper">
+                <div class="about__list-wrapper" id="desktop-version__about__list" >
                     <ul class="about__list">
-                        <li class="about__list-item"><p class="about-text">встретитесь с настоящими<br/>практиками
+                        <li class="about__list-item"><p class="about-text">встретитесь с настоящими практиками
                             проектного<br/>менеджмента</p><img src="./img/david.png" alt="" class="about-image"></li>
                         <li class="about__list-item"><p class="about-text">обменяетесь профессиональным опытом и
                             кейсами</p>
                             <img src="./img/cezar.png" alt="" class="about-image"></li>
                         <li class="about__list-item"><p class="about-text">узнаете, как вывести управление своими
-                            проектами
-                            на новый<br/>уровень </p><img src="./img/lol.png" alt="" class="about-image"></li>
+                            проектами<br/>
+                            на&nbsp;новый уровень </p><img src="./img/lol.png" alt="" class="about-image"></li>
                     </ul>
                 </div>
+            </div>
+            <div class="about__list-wrapper" id="mobile-version__about__list">
+                <ul class="about__list" id="mobile-version__about">
+                    <li class="about__list-item"><p class="about-text">встретитесь с настоящими практиками
+                        проектного<br/>менеджмента</p>
+                        <div class="about-image david"></div>
+                    </li>
+                    <li class="about__list-item"><p class="about-text">обменяетесь профессиональным опытом и
+                        кейсами</p>
+                        <div class="about-image cezar"></div>
+                    </li>
+                    <li class="about__list-item"><p class="about-text">узнаете, как вывести управление своими
+                        проектами<br/>
+                        на&nbsp;новый уровень </p>
+                        <div class="about-image last_image"></div>
+                    </li>
+                </ul>
             </div>
         </section>
         <section id="projectors">
             <div class="container">
-                <div class="title">
+                <div class="title projector-title">
                     <h2>Прожекторы</h2>
                     <p>Прожекторы конференции — это руководители компаний<br>
                         и&nbsp;бизнес-направлений, которые редко выступают перед<br>аудиторией в&nbsp;Ижевске. Это не
                         авторы
-                        книг, не гастролеры-коучи<br>
-                        с&nbsp;авторскими тренингами, а настоящие практики, развивающие<br>проекты в своем бизнесе.</p>
+                        книг, не&nbsp;гастролеры-коучи
+                        с&nbsp;авторскими тренингами, а настоящие практики, развивающие проекты в своем бизнесе.</p>
+                    <div id="title__trigger"></div>
                 </div>
             </div>
             <div class="slider" id="horizontal-scroller" style="overflow:auto">
@@ -161,7 +185,8 @@
                             <p class="person__quote">
                                 «Как мотивировать команду»<br><br>
 
-                                Разберем что влияет на мотивацию участников проекта и что руководитель проекта может с этим сделать
+                                Разберем что влияет на мотивацию участников проекта и что руководитель проекта может с
+                                этим сделать
                             </p>
                         </div>
                     </div>
@@ -170,11 +195,26 @@
                         <div class="carousel__card-content">
                             <div class="person">
                                 <h4 class="person__name">Дмитрий Опарин</h4>
-                                <span class="person__status">Руководитель проектного офиса</span>
+                                <span class="person__status">Директор проектного офиса ELMA</span>
                             </div>
                             <p class="person__quote">
                                 «Enterprise проекты. Путь в тысячу миль»<br><br>
                                 О собственном инструментарии управления проектами или как быть «сапожником в сапогах»
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item carousel__card horizontal__card last-card">
+                        <img src="./img/shelkonogova.png" alt="Ольга Щелконогова">
+                        <div class="carousel__card-content">
+                            <div class="person">
+                                <h4 class="person__name">Ольга Щелконогова</h4>
+                                <span class="person__status">Проектный менеджер, ProActor Solutions</span>
+                            </div>
+                            <p class="person__quote">
+                                «Особенности в управлении проектами при цифровизации госуправления»<br><br>
+
+                                О потребностях в цифровой трансформации и ключевых<br>ролях в команде проекта в системе
+                                госуправления.
                             </p>
                         </div>
                     </div>
@@ -183,7 +223,7 @@
                         <div class="carousel__card-content">
                             <div class="person">
                                 <h4 class="person__name">Анастасия Караваева </h4>
-                                <span class="person__status">Проектный менеджер<br>«Русские информационные технологии»</span>
+                                <span class="person__status">Проектный менеджер,<br>Русские информационные технологии</span>
                             </div>
                             <p class="person__quote">
                                 «Интуитивный менеджмент/универсальный менеджер»<br><br>
@@ -197,7 +237,7 @@
                         <div class="carousel__card-content">
                             <div class="person">
                                 <h4 class="person__name">Ирина Гордиенко</h4>
-                                <span class="person__status">Проектный менеджер 65 apps</span>
+                                <span class="person__status">Проектный менеджер, 65apps</span>
                             </div>
                             <p class="person__quote">
                                 «Управляй проектом без потерь»<br><br>
@@ -220,32 +260,18 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item carousel__card horizontal__card last-card">
-                        <img src="./img/shelkonogova.png" alt="Ольга Щелконогова">
-                        <div class="carousel__card-content">
-                            <div class="person">
-                                <h4 class="person__name">Ольга Щелконогова</h4>
-                                <span class="person__status">Проектный менеджер, ProActor Solutions</span>
-                            </div>
-                            <p class="person__quote">
-                                «Особенности в управлении проектами при цифровизации госуправления»<br><br>
-
-                                О потребностях в цифровой трансформации и ключевых<br>ролях в команде проекта в системе
-                                госуправления.
-                            </p>
-                        </div>
-                    </div>
+                    <div class="item carousel__card horizontal__card slider-splitter"></div>
                 </div>
             </div>
             <div class="carousel" id="carousel-speakers">
                 <div class="item carousel__card">
                     <div class="container">
-
                         <div class="carousel__card-content">
                             <p class="person__quote">
                                 «Как мотивировать команду»<br><br>
 
-                                Разберем что влияет на мотивацию участников проекта и что руководитель проекта может с этим сделать
+                                Разберем что влияет на мотивацию участников проекта и что руководитель проекта может с
+                                этим сделать
                             </p>
                             <div class="person">
                                 <div class="person-avatar">
@@ -272,9 +298,28 @@
                                 </div>
                                 <div class="person-info">
                                     <h4 class="person__name">Дмитрий Опарин</h4>
-                                    <span class="person__status">Руководитель проектного офиса</span>
+                                    <span class="person__status">Директор проектного офиса ELMA</span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item carousel__card">
+                    <div class="container">
+                        <div class="carousel__card-content">
+                            <p class="person__quote">
+                                «Особенности в управлении проектами при цифровизации госуправления»<br><br>
 
+                                О потребностях в цифровой трансформации и ключевых ролях в команде проекта в системе госуправления.
+                            </p>
+                            <div class="person">
+                                <div class="person-avatar">
+                                    <img src="./img/shelkonogova_mobile.png" alt="Ольга Щелконогова">
+                                </div>
+                                <div class="person-info">
+                                    <h4 class="person__name">Ольга Щелконогова</h4>
+                                    <span class="person__status">Проектный менеджер, ProActor Solutions</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -293,8 +338,8 @@
                                 </div>
                                 <div class="person-info">
                                     <h4 class="person__name">Анастасия Караваева </h4>
-                                    <span class="person__status">Проектный менеджер <br>
-«Русские информационные технологии»</span>
+                                    <span class="person__status">Проектный менеджер,<br>
+Русские информационные технологии</span>
                                 </div>
 
                             </div>
@@ -316,7 +361,7 @@
                                 </div>
                                 <div class="person-info">
                                     <h4 class="person__name">Ирина Гордиенко</h4>
-                                    <span class="person__status">Проектный менеджер 65 apps</span>
+                                    <span class="person__status">Проектный менеджер, 65apps</span>
                                 </div>
 
                             </div>
@@ -345,28 +390,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="item carousel__card">
-                    <div class="container">
-                        <div class="carousel__card-content">
-                            <p class="person__quote">
-                                «Как мотивировать команду»<br><br>
-
-                                Разберем что влияет на мотивацию участников проекта и что руководитель проекта может с этим сделать
-                            </p>
-                            <div class="person">
-                                <div class="person-avatar">
-                                    <img src="./img/shelkonogova_mobile.png" alt="Ольга Щелконогова">
-                                </div>
-                                <div class="person-info">
-                                    <h4 class="person__name">Александра Лощенова</h4>
-                                    <span class="person__status">Проектный менеджер, ProActor Solutions</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
         </section>
@@ -417,7 +440,7 @@
                         </li>
                         <li class="timing-item">
                             <div class="event__time">12:40 - 13:20</div>
-                            <div class="event__name">Кофе брейк</div>
+                            <div class="event__name">Кофе-брейк</div>
                             <div class="event__theme"></div>
                         </li>
                         <li class="timing__splitter"><span>Время</span><span>Спикер</span><span>Тема</span></li>
@@ -435,7 +458,7 @@
                     <ul class="timing__content-list__phone">
                         <li class="timing-item">
                             <div class="event__time">9:30 - 10:00</div>
-                            <div class="event__name">Регистрация, приветсвенный кофе</div>
+                            <div class="event__name">Регистрация, приветственный кофе</div>
                         </li>
                         <li class="timing__splitter"></li>
                         <li class="timing-item">
@@ -466,7 +489,7 @@
                         </li>
                         <li class="timing-item">
                             <div class="event__time">12:40 - 13:20</div>
-                            <div class="event__name">Кофе брейк</div>
+                            <div class="event__name">Кофе-брейк</div>
                         </li>
                         <li class="timing__splitter"></li>
                         <li class="timing-item">
@@ -486,32 +509,32 @@
             </div>
         </section>
         <section id="signin">
+            <div id="form-mobile_background">
             <div class="container">
                 <div class="signin-container revealator-slideup revealator-once">
                     <div class="signin-bg">
                         <div class="signin__content">
-                            <h2>Зарегистрируйся сейчас</h2>
-                            <form action="submit" class="main-form" id="main-form" method=POST>
-                                <input type="text" class="input-default" placeholder="Иван Иванов" required>
-                                <input type="email" class="input-default" placeholder="E-Mail" required>
-                                <input type="tel" id="phone" class="input-default" placeholder="Номер телефона"
-                                       required>
+                            <form action="" class="main-form" id="main-form" method="post">
+                                <h2 class="signin__title">Зарегистрируйся сейчас</h2>
+                                <input type="hidden" name="action" value="landingProjectorIzhevsk">
+                                <input type="text" class="input-default" name="name" placeholder="Иван Иванов" required>
+                                <input type="email" class="input-default" name="email" placeholder="E-Mail" required>
+                                <input type="tel" id="phone" class="input-default" name="phone"
+                                       placeholder="Номер телефона" required>
                                 <label class="checkbox-label custom-checkbox">
-                                    <input type="checkbox">
-                                    <span>Я&nbsp;принимаю <a href="#" target="_blank" class="policy-access">условия пользовательского
-                            соглашения
-                            и политики конфиденциальности</a></span>
+                                    <input type="checkbox" name="policy" required>
+                                    <span>Я&nbsp;принимаю <a href="/forms/user_agreement.html" target="_blank"
+                                                             class="policy-access">
+                                        условия пользовательского соглашения и политики конфиденциальности</a></span>
                                 </label>
-                                <input type="submit" class="signin-btn" value="Зарегистрироваться">
-
-
+                                <button type="submit" class="signin-btn">Зарегистрироваться</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
-        <!--        <p><a href="#modal-window" data-modal>Open Modal</a></p>-->
         <section id="location">
             <div class="container">
                 <div class="title location__title">
@@ -528,7 +551,7 @@
         <section id="contacts">
             <div class="container">
                 <div class="title">
-                    <h2>С кем связаться</h2>
+                    <h2>С&nbsp;кем&nbsp;связаться</h2>
                 </div>
                 <div class="contacts-content">
                     <div class="contact-card">
@@ -560,11 +583,10 @@
 
         </div>
     </footer>
-    <div id="modal-window" class="modal">
-        <p>Thanks for clicking. That felt good.</p>
-        <a href="#" rel="modal:close">Close</a>
-    </div>
+
+
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
@@ -576,6 +598,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/ScrollToPlugin.min.js"></script>
+
+<script src="/js/jquery.cookie.js"></script>
+<script src="/js/sendFormAjax.js"></script>
+
 <script>
     SmoothScroll({
         animationTime: 300,
@@ -589,10 +615,10 @@
         pulseNormalize: 1,
         touchpadSupport: true,
     })
+    Revealator.effects_padding = '-300';
 </script>
 <script src="./js/script.js"></script>
-<script src="js/forms.js"></script>
-<script src="js/nodemailer.js"></script>
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript"> (function (m, e, t, r, i, k, a) {
     m[i] = m[i] || function () {

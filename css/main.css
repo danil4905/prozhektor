@@ -3,10 +3,15 @@
   background: #FFFF00;
   color: white;
 }
-
+#mobile-version__about__list {
+  display: none;
+}
 ::-moz-selection {
   background: #FFFF00;
   color: white;
+}
+.projector-title h2 {
+  margin-right: 160px;
 }
 
 :root {
@@ -49,6 +54,13 @@ button, .signin-btn {
   justify-content: center;
   border-radius: 0;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+.signin-btn:hover {
+  background: transparent;
+  color: #FFFF00;
+  border: 2px solid #FFFF00;
+  box-sizing: border-box;
 }
 
 ul {
@@ -252,10 +264,27 @@ section {
   font-size: 18px;
   margin-bottom: 20px;
 }
-
+.tel__wrapper {
+  display: flex;
+  align-items: center;
+}
+.tel__wrapper .vk {
+  margin-left: 50px;
+}
+@media (max-width: 990px) {
+  .tel__wrapper .vk {
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+  }
+  .tel__wrapper {
+    flex-direction: row-reverse;
+  }
+}
 .tel__wrapper a {
   display: block;
   text-align: center;
+  font-weight: 500;
 }
 
 .burger {
@@ -358,6 +387,7 @@ body {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
+
 .slider::-webkit-scrollbar {
   display: none;
 }
@@ -375,8 +405,14 @@ body {
   margin-right: 20px;
 }
 .slider .sections {
-  width: 600%;
+  width: 655%;
   height: 100%;
+}
+
+.slider .slider-splitter {
+  height: 200px;
+  width: 1px!important;
+  background-color: white;
 }
 
 .carousel__card-content {
@@ -432,7 +468,8 @@ body {
 
 #timing {
   background-color: #F3F0F8;
-  padding: 120px 0 530px;
+  padding: 120px 0 430px;
+  margin-bottom: -100px;
 }
 
 .timing__title {
@@ -491,7 +528,7 @@ body {
 
 #signin {
   min-height: 680px;
-  margin-top: -28%;
+  margin-top: -24%;
 }
 
 .signin-container {
@@ -650,12 +687,16 @@ body {
 }
 .person__telegram:hover {
   border-bottom: 1px solid #6016C4;
+  color: #6016C4;
 }
 
 /* Large desktop */
 @media (min-width: 1201px) and (max-width: 1400px) {
   .person__quote {
     margin-top: 50px;
+  }
+  .projector-title h2 {
+    margin-right: 130px;
   }
 
   .title h2 {
@@ -1180,13 +1221,34 @@ body {
 }
 /* Landscape phones and down */
 @media (max-width: 575px) {
+  #about, #projectors, #timing, #contacts, #signin {
+    padding-top: 40px;
+  }
+  #mobile-version__about__list {
+    display: block;
+  }
+  #desktop-version__about__list {
+    display: none;
+  }
+.about__title p{
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+#form-mobile_background {
+  height: 540px;
+  background: url(../img/backside_mob.png) right bottom no-repeat;
+}
   #signin {
     min-height: 580px;
-    margin-top: -80%;
+    margin-top: -380px;
   }
   #signin .container {
     height: 540px;
   }
+  .signin__content h2 {
+    font-size: 22px;
+  }
+
   #signin .container .signin-container {
     height: 540px;
   }
@@ -1195,7 +1257,10 @@ body {
   }
 
   .signin-container .signin-bg {
-    background: url("../img/backside_mob.png") right bottom no-repeat;
+    /*background: url("../img/backside_mob.png") right bottom no-repeat;*/
+  }
+  .signin-container {
+    background: transparent;
   }
 
   .intro-wrapper {
@@ -1245,26 +1310,35 @@ body {
     background-color: #F3F0F8;
   }
   .about__list-wrapper .about__list {
-    max-width: 360px;
+    width: 100%;
     margin: 0 auto;
   }
   .about__list-wrapper .about__list .slick-list .slick-track {
     background-color: #F3F0F8 !important;
   }
-
+  #projectors {
+    margin-bottom: 0px;
+  }
   .title h2 {
     font-size: 22px;
   }
   .title p {
-    font-size: 12px;
+    font-size: 13px;
+    margin-bottom: 20px;
   }
+  #timing {
+    margin-top: -50px;
+  }
+.timing__splitter {
+  padding-top: 20px;
 
+}
   .about__list-item {
     height: 410px !important;
   }
 
   .about-text {
-    font-size: 12px !important;
+    font-size: 13px !important;
     padding: 0 10px;
   }
 
@@ -1345,6 +1419,13 @@ body {
   .main-form .input-default {
     background: transparent;
   }
+  .main-form {
+    color: white;
+  }
+  .main-form p {
+    color: white;
+    font-size: 22px;
+  }
 
   #location {
     padding-top: 50px;
@@ -1375,4 +1456,40 @@ body {
   .checkbox-label span {
     font-size: 10px;
   }
+  .david {
+    background: url("../img/david_bg.png") top no-repeat!important;
+  }
+  .cezar {
+    background: url("../img/cezar_bg.png") top no-repeat!important;
+  }
+  .last_image {
+    background: url("../img/lol_bg.png") top no-repeat!important;
+  }
+
+  .about-image {
+    height: 100%;
+  }
+.intro-wrapper {
+  padding-left: 0;
+  height: calc(100% + 1px);
+}
+.tel__wrapper {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+
+}
+  .tel__wrapper .vk img {
+    width: 20px;
+    height: 20px;
+  }
+  .phone {
+    font-size: 14px;
+  }
+  .phone-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
 }

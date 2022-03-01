@@ -17,13 +17,7 @@ $(document).ready(function () {
         }
 
     })
-    console.log($('a[data-modal]'))
-    $('#modal-window').modal();
-    $('a[data-modal]').click(function (event) {
-        console.log('lol')
-        $(this).modal();
-        return false;
-    });
+
     $('.menu-burger__header').click(function () {
         $('.menu-burger__header').toggleClass('open-menu');
         $('.wrapper').toggleClass('wrapper--overlay');
@@ -77,10 +71,10 @@ $(document).ready(function () {
 
     var ww = window.innerWidth;
 
-    var noSlides = $(".horizontal__card").length;
+    var noSlides = $(".horizontal__card").length-1;
     var slideWidth = $(".horizontal__card").width();
     console.log(slideWidth)
-    var slideContainerWidth = slideWidth*noSlides-ww;
+    var slideContainerWidth = slideWidth*noSlides+100-ww;
 
     console.log(noSlides, slideContainerWidth);
 
@@ -95,7 +89,7 @@ $(document).ready(function () {
 
     function createHorizontal() {
         return new ScrollMagic.Scene({
-            triggerElement: "#projectors",
+            triggerElement: "#title__trigger",
             triggerHook: "onLeave",
             duration: slideContainerWidth
         })
@@ -123,9 +117,6 @@ $(document).ready(function () {
         console.log(ww, slideContainerWidth);
 
     });
-
-
-
 
 });
 
